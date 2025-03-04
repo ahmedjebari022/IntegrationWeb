@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panier d'achat</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#F1EEFF] font-[Montserrat]">
+  <div class="w-full max-w-screen-xl mx-auto p-4 flex flex-col md:flex-row gap-0 items-start">
+    <div class="bg-gray-200 rounded-2xl p-10 flex-1 min-h-[500px] flex flex-col justify-between">
+      <div class="text-[#4E3C9C] text-lg font-semibold mb-4">&darr; CHANGEUP</div>
+      <h1 class="text-4xl font-semibold">Panier d'achat</h1>
+      <div class="flex items-center justify-between mt-6">
+        <img src="../Assets/images/versace-sac.jpg" alt="Image du panier" class="w-28 h-28 object-cover rounded-lg">
+        <div class="flex-1 ml-4">
+          <h2 class="text-2xl font-medium">Versace Handbag</h2>
+        </div>
+        <p class="text-xl font-semibold">1,900 $</p>
+      </div>
+      <div class="border-t border-gray-300 my-6"></div>
+      <div class="mt-4">
+        <p class="text-lg text-gray-600">Livraison</p>
+        <p class="text-lg">Gratuite</p>
+        <p class="text-sm text-gray-500">Livraison gratuite (5 à 7 jours ouvrés)</p>
+      </div>
+      <div class="border-t border-gray-300 my-6"></div>
+      <div class="flex justify-between items-center">
+        <h3 class="text-2xl font-semibold">Total à payer</h3>
+        <p class="text-xl font-semibold">1,900 $</p>
+      </div>
+    </div>
+    
+    <!-- Formulaire de Livraison -->
+    <div class="bg-[#85E6C5] rounded-2xl p-10 flex-1 min-h-[500px] flex flex-col justify-between">
+      <h3 class="text-2xl font-semibold">Informations de Livraison</h3>
+
+      <div class="mt-4">
+        <label class="block text-lg font-medium">Email</label>
+        <input type="email" placeholder="Email" class="w-full p-3 rounded-lg border border-gray-300">
+      </div>
+
+      <div class="mt-4">
+        <label class="block text-lg font-medium">Adresse de Livraison</label>
+        <input type="text" placeholder="Nom" class="w-full p-3 mb-2 rounded-lg border border-gray-300">
+        <input type="text" placeholder="Pays" class="w-full p-3 mb-2 rounded-lg border border-gray-300">
+        <input type="text" placeholder="Adresse" class="w-full p-3 mb-2 rounded-lg border border-gray-300">
+        <a href="#" class="text-blue-600 underline">Saisir l'adresse manuellement</a>
+      </div>
+
+      <div class="mt-4">
+        <label class="block text-lg font-medium">Méthode de Paiement</label>
+        <div class="flex gap-4 mt-2">
+          <img src="../Assets/images/carte-debit.jpg" alt="Carte Débit" class="w-24 h-16 border rounded-lg object-contain">
+          <img src="../Assets/images/affirm.jpg" alt="PayPal" class="w-24 h-16 border rounded-lg object-contain">
+          <img src="../Assets/images/after-pay.jpg" alt="Apple Pay" class="w-24 h-16 border rounded-lg object-contain">
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <label class="block text-lg font-medium">Informations de carte</label>
+        <input type="text" placeholder="Num° Carte" class="w-full p-3 rounded-lg border border-gray-300">
+        <div class="flex gap-4 mt-2">
+          <input type="text" placeholder="MM/AA" class="w-1/2 p-3 rounded-lg border border-gray-300">
+          <input type="text" placeholder="CVC" class="w-1/2 p-3 rounded-lg border border-gray-300">
+        </div>
+      </div>
+
+      <button class="w-full bg-[#4E3C9C] text-white py-4 rounded-lg mt-6 text-xl font-bold">Payer</button>
+      <p class="text-sm underline text-gray-600 mt-4">Retours et échanges gratuits</p>
+    </div>
+  </div>
+</body>
+</html>

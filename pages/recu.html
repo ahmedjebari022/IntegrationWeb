@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reçu de commande</title>
+    <link href="../css/output.css" rel="stylesheet">
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+
+    <div class="w-[600px] bg-purple-100 rounded-lg shadow-lg font-montserrat mx-auto">
+        
+        <!-- En-tête -->
+        <div class="bg-purple-700 text-white px-5 py-4 flex justify-between rounded-t-lg text-lg font-semibold">
+            <span>Order 123 456 confirmed</span>
+        </div>
+
+        <!-- Titre CHANGEUP -->
+        <div class="text-purple-700 text-lg font-semibold px-5 my-4">
+            CHANGEUP
+        </div>
+
+        <!-- Message d'achat -->
+        <div class="text-black text-xl font-light px-5 mb-6">
+            Merci pour votre achat !
+        </div>
+
+        <!-- Titre "Order summary" -->
+        <div class="text-black text-3xl font-normal px-5 mb-5">
+            Order summary
+        </div>
+
+        <!-- Image et détails du produit -->
+        <div class="flex items-center px-5 mb-6">
+            <img class="w-[262px] h-[261px] rounded-lg mr-5"
+                src="../Assets/images/versace-sac.jpg"
+                alt="Versace Handbag"
+                onerror="this.src='https://placehold.co/262x261'; this.alt='Image non trouvée';"
+            />
+            <div>
+                <div class="text-gray-900 text-2xl font-semibold mb-2">
+                    Versace handbag
+                </div>
+                <div class="bg-green-200 text-green-800 text-sm font-medium px-3 py-1 rounded w-fit mb-2">
+                    Tag
+                </div>
+
+                <!-- Prix -->
+                <div class="flex items-center">
+                    <span class="text-gray-900 text-2xl font-bold mr-1">$</span>
+                    <span class="text-gray-900 text-4xl font-bold">1900</span>
+                </div>
+
+                <!-- Frais supplémentaires -->
+                <div class="text-gray-900 text-sm mt-3">
+                    <p>Shipping: 2$</p>
+                    <p>Tax: 1.5$</p>
+                    <p class="font-bold">Total: 1903.5$</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Informations du client -->
+        <div class="bg-gradient-to-r from-gray-300 to-gray-400 rounded-lg mx-5 p-6">
+            <div class="text-black text-lg font-bold mb-4">
+                Customer information
+            </div>
+
+            <div class="flex text-gray-900 text-sm font-medium">
+                <div class="flex-1 text-left">Shipping address</div>
+                <div class="flex-1 text-center">Billing address</div>
+                <div class="flex-1 text-right">Payment method</div>
+            </div>
+        </div>
+
+        <!-- Message de contact -->
+        <div class="text-gray-900 text-sm font-normal text-center my-6">
+            If you have any questions, 
+            <a href="mailto:changeup@gmail.com" class="text-purple-700 underline">
+                contact us at changeup@gmail.com
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
