@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Login Page</title>
+</head>
+<body class="flex flex-col min-h-screen">
+    <div class="flex flex-grow">
+        <!-- Left Section -->
+        <div class="w-1/3 bg-teal-400 flex items-center justify-center">
+            <h1 class="text-white text-3xl font-bold">CHANGEUP</h1>
+        </div>
+        
+        <!-- Right Section -->
+        <div class="w-2/3 bg-gradient-to-r from-indigo-600 to-purple-700 flex flex-col items-center justify-center p-10 text-white">
+            <h2 class="text-2xl font-bold text-center mb-6">Login</h2>
+            <form class="w-full max-w-md">
+                <div class="mb-4">
+                    <label class="block">Email</label>
+                    <input type="email" class="w-full px-4 py-2 border border-white bg-transparent text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-white">
+                </div>
+                <div class="mb-4">
+                    <label class="block">Password</label>
+                    <input type="password" class="w-full px-4 py-2 border border-white bg-transparent text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-white">
+                </div>
+                <button class="w-full bg-white text-indigo-600 py-2 rounded-lg hover:bg-gray-200">Login</button>
+                <p class="text-center text-sm mt-3">Already have an account? <a href="#" class="underline">Biometric</a></p>
+                <button class="w-full flex items-center justify-center border border-white text-indigo-600 bg-white py-2 rounded-lg mt-4 hover:bg-gray-200">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" class="w-6 h-6 mr-2">
+                    Login with Facebook
+                </button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-100 p-6 text-gray-700 text-sm">
+        <div class="container mx-auto grid grid-cols-4 gap-4">
+            <div>
+                <h3 class="font-bold">CHANGEUP</h3>
+            </div>
+            <div>
+                <h3 class="font-bold">ONLINE SERVICES</h3>
+                <ul>
+                    <li>Payment Methods</li>
+                    <li>Shipping Options</li>
+                    <li>My Account</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold">CONTACT US</h3>
+                <ul>
+                    <li>changeup@gmail.com</li>
+                    <li>Instagram</li>
+                    <li>LinkedIn</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold">SUBSCRIBE</h3>
+                <div class="flex border rounded-lg overflow-hidden">
+                    <input type="email" placeholder="Enter your mail" class="px-4 py-2 w-full focus:outline-none">
+                    <button class="bg-gray-800 text-white px-4">→</button>
+                </div>
+            </div>
+        </div>
+        <p class="text-center mt-4">© 2025 Troc de Lux. All rights reserved. Luxury goods at your fingertips.</p>
+    </footer>
+</body>
+</html>
